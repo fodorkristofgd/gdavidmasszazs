@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    overflow-x: hidden;
+   
+}
+main{
+    background-color:#F2D2BD;
+    height: auto;
+   
+}
+.header{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right top, #834333 40%, #c95a49,    #8b4513    ) 	;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px    30px;
+    position: relative;
+    text-shadow: black 0 0 2px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:  #F3D8CF;
+    font-family: 'Penelope Anne', sans-serif;                                                                                   
+    font-weight: bolder ;
+    font-size: 40px;
+    transition: 1s;
+    letter-spacing: 5px;
+    
+}
+.nav-links ul li a:hover{
+    text-shadow: 2px 2px 20px black ;
+    transition: 0.5s;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0% ;
+    height: 4px;
+    background-color: #F3D8CF;
+    display: block;
+    margin: auto;
+   border-radius: 10px;
+   transition: 1.1s;
+}
+.nav-links ul li:hover::after{
+    width: 70% ;
+    transition: 0.5s;
+
+
+}
+
+.btn-close{
+    display: none;
+    transition: 1s;
+}
+#menuicon{
+    display: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.text-box{
+    height: 600px;
+    position: relative;
+    background: url("Stones.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+}
+#welcome{
+    font-size: 60px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Acme', sans-serif;                                                                                    
+    font-weight: bolder;
+    color: #ffe4c4    ;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 20px black;
+    margin: 20px;
+ 
+}
+.container{
+    
+   
+    background-color: #C19A6B	;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    border-radius: 10px 300px 10px ;
+    
+    
+}
+#introimage{
+    width: 500px;
+    transform: translateX(-50px);
+}
+.box{
+    width: 600px;
+    height: auto;
+    margin: 20px;
+    padding: 40px;
+    background-color: transparent;
+    box-sizing: border-box;
+
+                                                
+    
+}
+
+.box :first-child{
+    font-family: 'Fonseca', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #800020	;
+                                                
+}
+.box p{
+    text-align: justify;
+    font-style: italic;
+    color: #4A0404	;
+    word-spacing:0;
+    font-size: 18px;
+}
+#cim{
+    text-align: center;
+}
+#masszazsok{
+    font-size: 90px;
+    font-family: 'Acme', sans-serif;
+}
+#kapcsolat{
+    font-size: 90px;
+    font-family: 'Acme', sans-serif;
+}
+#kártyák{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    background: url("background3.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px;
+    
+}
+.card{
+    text-align: center;
+    height: 450px;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0;
+    transition: 1s;
+    border: #8b4513 solid 1px;
+    background-color: #F2D2BD;
+
+}
+.card h5{
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+    background-color: #4A0404;
+    color: #F3D8CF;
+    border-radius: 20px;
+}
+.cardimg{
+    border-radius: 20px 20px 0 0 ;
+    
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: black 0 0 70px;
+    transition: 500ms;
+    transform: translateY(-30px);
+}
+.kartyak{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    text-align: center;
+    align-items: center;
+}
+.doboz{
+    box-sizing: border-box;
+    width: 800px;
+    color: #4A0404;
+}
+.doboz h1{
+    font-family: 'Acme', sans-serif;
+    font-size: 70px;
+}
+.doboz p{
+    font-size: 20px;
+}
+#masszazs1{
+    width: 800px;
+    border-radius: 100px 0 100px 0;
+    padding: 20px;
+}
+.doboz ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+.card{
+    width: 400px;
+}
+#contact{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Acme', sans-serif;
+    color: #4A0404;
+}
+
+@media (max-width: 1500px){
+
+    #introimage{
+        width: 600px;
+    }
+    .box{
+        width: 500px;
+    }
+    #masszazs1{
+        width: 500px;
+    }
+}
+@media (max-width: 1400px){
+    header{
+        padding: 2% 6%;
+    }
+    #menuicon{
+        display: block;
+        transition: 1s;
+    }
+
+    .navlinks ul li{
+        display:block;
+        transition: 1s;
+    }
+    .nav-links{
+        position: absolute;
+        background: #4A0404;
+        height: 530px;
+        width: 350px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        display: none;
+        transition: 1s;
+    }
+    
+    .btn-close{
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: 30px 0 30px 60px;
+        transition: 1s;
+    }
+    #welcome{
+        font-size: 50px;
+    }
+    .text-box{
+        height: 400px;
+    }
+    #introimage{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1024px){
+    #welcome{
+        
+        font-size: 40px;
+    }
+    #introimage{
+        transform: translateX(50px);
+        transform: translateY(-100px);
+    }
+    .card{
+        transform: translateX(200px);
+    }
+   
+}
+@media (max-width: 700px){
+    #icon{
+        width: 100px;
+    }
+    .text-box{
+        height: 250px;
+    }
+    #welcome{
+        font-size: 30px;
+        margin: 5px;
+        top: 30%;
+
+    }
+    #introimage{
+        width: 330px;
+    }
+    #masszázs1
+    {
+        width: 300px;
+    }
+    .card{
+        transform: translateX(0);
+    }
+    #masszazsok{
+        font-size: 70px;
+    }
+    
+
+}
+@media (max-width: 600px){
+    #masszazs1{
+        width: 300px;
+    }
+    .card{
+        width: 300px;
+        
+    }
+}
+@media (max-width:500px){
+    .card{
+        width: 220px;
+        height: 310px;
+    }
+}
+
+@media (max-width:420px) {
+    #introimage{
+        width: 200px;
+    }
+    #cim2{
+        font-size: 50px;
+    }
+    .kartyak h1{
+        font-size: 40px;
+    }
+    .card{
+        width: 170px;
+        height: 280px;
+    }
+    #contact{
+        width: 70px;
+        transform: translateX(130px);
+    }
+    
+}
+@media (max-width:375px) {
+    #welcome{
+    top: 30%;
+   
+    }
+    .text-box{
+        height: 170px;
+    }
+    #introimage{
+        width: 200px;
+    }
+    .card{
+        width: 150px;
+        height: 200px;
+    }
+    #kapcsolat{
+        font-size: 65px;
+    }
+    #masszazsok{
+        font-size: 65px;
+    }
+    
+}
+
+   .footercontainer{
+     background-color: #212329;
+    height: 15vh;
+   }
+   
